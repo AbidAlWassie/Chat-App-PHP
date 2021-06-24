@@ -1,0 +1,94 @@
+@import "prefixes";
+//@media only screen and (max-width: 1030px) {
+//  .chat-container {
+//    //grid-template-columns: 230px 45vw 10vw 10vw 10vw !important;
+//    //grid-template-rows: 7vh 5vh 81vh 7vh;
+//  }
+//}
+//
+//@media only screen and (max-width: 768px) {
+//
+//}
+//
+//@media only screen and (max-width: 950px) {
+//  .conversation.list.item {
+//    display: flex;
+//    align-items: center;
+//    min-width: 100% !important;
+//    cursor: pointer;
+//  }
+//}
+
+@media only screen and (max-width: 1300px) {
+  .chat-container {
+    @include grid-template-columns(20em 1fr 15em !important);
+    @include grid-template-rows(64px 46px 1fr 64px !important);
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .chat-container {
+    //@include grid-template-columns(20em 1fr 20em);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title header header'
+            'search main main'
+            'people main main'
+            'people input input' !important;
+  }
+
+  .item6 {
+    display: none;
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .chat-container {
+    @include grid-template-columns(17em 1fr 15em !important);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title header header'
+            'search main main'
+            'people main main'
+            'people input input' !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chat-container {
+    width: 100vw !important;
+    @include grid-template-columns(16em 1fr !important);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title header'
+            'search main'
+            'people main'
+            'people input' !important;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .chat-container {
+    width: 100vw !important;
+    min-height: 101vh !important;
+    @include grid-template-columns(100% !important);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title'
+            'search'
+            'people'
+            'people' !important;
+  }
+
+  .item1, .item5, .item6, .item7 {
+    display: none;
+    width: 0;
+  }
+
+  .item7 > * {
+    display: none !important;
+    width: 0;
+  }
+
+}

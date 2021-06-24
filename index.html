@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="css/member.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h3 class="heading">Create an account</h3>
+  <div class="input-container">
+    <form action="chat.html" id="formSignUp">
+
+      <div class="form-control">
+        <div class="input-item">
+          <input type="text" id="username" class="inputName" name="name" required>
+          <label for="username" class="label-name">
+            <span class="name-content">Name</span>
+          </label>
+        </div>
+        <div class="errorMessage">
+          <i class="material-icons icon-info">info</i>
+          <i class="material-icons icon-okay">check_circle</i>
+          <p class="message-text">Username cannot be blank</p>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="input-item">
+          <input type="text" id="email" class="inputEmail" name="email" required>
+          <label for="email" class="label-name">
+            <span class="name-content">Email</span>
+          </label>
+        </div>
+
+        <div class="errorMessage">
+          <i class="material-icons icon-info">info</i>
+          <i class="material-icons icon-okay">check_circle</i>
+          <p class="message-text">Email cannot be blank</p>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="input-item">
+          <input type="password" id="password" class="inputPassword" name="password" required>
+          <label for="email" class="label-name">
+            <span class="name-content">Password</span>
+          </label>
+        </div>
+
+        <div class="errorMessage">
+          <i class="material-icons icon-info">info</i>
+          <i class="material-icons icon-okay">check_circle</i>
+          <i class="material-icons icon-show">visibility</i>
+          <i class="material-icons icon-hide">visibility_off</i>
+          <p class="message-text">Password cannot be blank</p>
+        </div>
+      </div>
+
+      <div class="form-control">
+        <div class="input-item">
+          <input type="password" id="password2" class="inputConfirmPassword" name="password" required>
+          <label for="password" class="label-name">
+            <span class="name-content">Confirm Password</span>
+          </label>
+        </div>
+
+        <div class="errorMessage">
+          <i class="material-icons icon-info">info</i>
+          <i class="material-icons icon-okay">check_circle</i>
+          <i class="material-icons icon-show">visibility</i>
+          <i class="material-icons icon-hide">visibility_off</i>
+          <p class="message-text">Passwords don't match</p>
+        </div>
+      </div>
+
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>

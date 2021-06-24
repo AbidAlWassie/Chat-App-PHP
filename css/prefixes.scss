@@ -1,0 +1,33 @@
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin grid-template-columns($value) {
+  -ms-grid-columns: $value;
+  grid-template-columns: $value;
+}
+
+@mixin grid-template-rows($value) {
+  -ms-grid-rows: $value;
+  grid-template-rows: $value;
+}

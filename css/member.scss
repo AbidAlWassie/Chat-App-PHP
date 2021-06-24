@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "variables";
+
+body {
+  font-family: "Open Sans", "Poppins", sans-serif;
+  margin: 0;
+  background: #0054AD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.btn {
+  border: none;
+  padding: 5px;
+}
+
+.btn.round {
+  border-radius: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.input-item {
+  width: 400px;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.input-item input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+
+.input-item label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 3px solid #b4b4b4;
+}
+
+.input-item label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #3391e0;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in;
+}
+
+.name-content {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+.input-item input:focus + .label-name .name-content, .input-item input:valid + .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #3391e0;
+}
+
+.input-item input:focus + .label-name::after, .input-item input:valid + .label-name::after {
+  transform: translateX(0);
+}
+
+.errorMessage {
+  position: relative;
+  color: #ec6a6a;
+  visibility: hidden;
+}
+
+.errorMessage .material-icons {
+  font-size: 20px;
+  top: -52px;
+  right: 5px;
+  position: absolute;
+}
+
+.form-control.success .input-item label::after {
+  transform: translateX(0);
+  border-bottom: 3px solid #3391e0 !important;
+}
+
+.form-control.success .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  font-weight: 600;
+  color: #3391e0 !important;
+}
+
+.form-control.success .icon-okay {
+  color: #3391e0;
+  visibility: visible;
+}
+
+.form-control.error .input-item label::after {
+  transform: translateX(0);
+  border-bottom: 3px solid #e03333 !important;
+}
+
+.form-control.error .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  font-weight: 600;
+  color: #e03333 !important;
+}
+
+.form-control.error .icon-info {
+  color: #e03333;
+  visibility: visible;
+}
+
+.form-control.error .errorMessage {
+  visibility: visible;
+}
+
+.icon-info, .icon-okay {
+  visibility: hidden;
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.input-container {
+  background: rgba(0, 0, 0, 0.3);
+}
+

@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1300px) {
+  .chat-container {
+    -ms-grid-columns: 20em 1fr 15em !important;
+    grid-template-columns: 20em 1fr 15em !important;
+    -ms-grid-rows: 64px 46px 1fr 64px !important;
+    grid-template-rows: 64px 46px 1fr 64px !important;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .chat-container {
+        grid-template-areas: 'title header header' 'search main main' 'people main main' 'people input input' !important;
+  }
+  .item6 {
+    display: none;
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .chat-container {
+    -ms-grid-columns: 17em 1fr 15em !important;
+    grid-template-columns: 17em 1fr 15em !important;
+        grid-template-areas: 'title header header' 'search main main' 'people main main' 'people input input' !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chat-container {
+    width: 100vw !important;
+    -ms-grid-columns: 16em 1fr !important;
+    grid-template-columns: 16em 1fr !important;
+        grid-template-areas: 'title header' 'search main' 'people main' 'people input' !important;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .chat-container {
+    width: 100vw !important;
+    min-height: 101vh !important;
+    -ms-grid-columns: 100% !important;
+    grid-template-columns: 100% !important;
+        grid-template-areas: 'title' 'search' 'people' 'people' !important;
+  }
+  .item1, .item5, .item6, .item7 {
+    display: none;
+    width: 0;
+  }
+  .item7 > * {
+    display: none !important;
+    width: 0;
+  }
+}
+/*# sourceMappingURL=media-queries.css.map */

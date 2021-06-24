@@ -1,0 +1,74 @@
+body {
+  background: #000000;
+}
+
+.ss-container {
+  background: #000000;
+}
+
+.chat-messages {
+  background: #000000;
+}
+
+.item1 {
+  background: #000000;
+  color: white;
+  z-index: 1000;
+}
+
+.person {
+  background: #000000;
+  color: white;
+}
+
+.person.list.item {
+  border-bottom: 1px solid #464c4f;
+}
+
+.item6 {
+  background: #000000;
+  color: white;
+  border-left: 1px solid #464c4f !important;
+}
+
+.item7 {
+  background: #000000;
+  color: white;
+  border-top: 1px solid #464c4f !important;
+}
+
+.message-list-item:not(.message-list-item.me) {
+  display: inline-block !important;
+  padding: 10px;
+  border-radius: 20px;
+  background: #202324 !important;
+  color: #dedcd9;
+  max-width: 30vw;
+}
+
+.message-list-item.me {
+  margin-right: 10px;
+  background: #0060aa !important;
+}
+
+.input-custom.grey {
+  background: #222426 !important;
+  color: #bdb2a6 !important;
+  border-color: #3e4446;
+}
+
+.item2,
+.item3,
+.item4 {
+  background: #00438a !important;
+  color: white;
+}
+
+.item4 .ss-scroll {
+  background: rgba(123, 185, 255, 0.2);
+}
+
+.item5 .ss-scroll {
+  background: rgba(127, 153, 212, 0.36);
+}
+/*# sourceMappingURL=dark.css.map */
